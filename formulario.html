@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<link rel="stylesheet" href="style.css">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Formulário de Informações Financeiras</title>
+</head>
+<body>
+    <h1>Formulário de Informações Financeiras</h1>
+    <form action="/submit_form" method="post">
+        <label for="ocupacao">1. Qual é a sua principal ocupação?</label><br>
+        <input type="radio" id="clt" name="ocupacao" value="Empregado com CLT">
+        <label for="clt">Empregado com CLT</label><br>
+        <input type="radio" id="empresario" name="ocupacao" value="Empresário">
+        <label for="empresario">Empresário</label><br>
+        <input type="radio" id="autonomo" name="ocupacao" value="Autônomo">
+        <label for="autonomo">Autônomo</label><br>
+        <input type="radio" id="desempregado" name="ocupacao" value="Desempregado">
+        <label for="desempregado">Desempregado</label><br>
+        <input type="radio" id="estudante" name="ocupacao" value="Estudante">
+        <label for="estudante">Estudante</label><br>
+        <input type="radio" id="aposentado" name="ocupacao" value="Aposentado">
+        <label for="aposentado">Aposentado</label><br>
+        <input type="radio" id="outra_ocupacao" name="ocupacao" value="Outra">
+        <label for="outra_ocupacao">Outra:</label>
+        <input type="text" id="outra_ocupacao_text" name="outra_ocupacao_text"><br><br>
+
+        <label for="renda_adicional">2. Você possui alguma fonte de renda adicional?</label><br>
+        <input type="radio" id="renda_sim" name="renda_adicional" value="Sim">
+        <label for="renda_sim">Sim</label><br>
+        <input type="radio" id="renda_nao" name="renda_adicional" value="Não">
+        <label for="renda_nao">Não</label><br><br>
+
+        <label for="natureza_renda">3. Se sim, qual é a natureza dessa renda adicional?</label><br>
+        <input type="radio" id="investimentos" name="natureza_renda" value="Investimentos">
+        <label for="investimentos">Investimentos</label><br>
+        <input type="radio" id="freelance" name="natureza_renda" value="Freelance/Trabalhos temporários">
+        <label for="freelance">Freelance/Trabalhos temporários</label><br>
+        <input type="radio" id="aluguéis" name="natureza_renda" value="Aluguéis">
+        <label for="aluguéis">Aluguéis</label><br>
+        <input type="radio" id="outra_renda" name="natureza_renda" value="Outro">
+        <label for="outra_renda">Outro:</label>
+        <input type="text" id="outra_renda_text" name="outra_renda_text"><br><br>
+
+        <label for="situacao_financeira">4. Como você classifica sua situação financeira atual?</label><br>
+        <input type="radio" id="muito_estavel" name="situacao_financeira" value="Muito estável">
+        <label for="muito_estavel">Muito estável</label><br>
+        <input type="radio" id="estavel" name="situacao_financeira" value="Estável">
+        <label for="estavel">Estável</label><br>
+        <input type="radio" id="neutra" name="situacao_financeira" value="Neutra">
+        <label for="neutra">Neutra</label><br>
+        <input type="radio" id="instavel" name="situacao_financeira" value="Instável">
+        <label for="instavel">Instável</label><br>
+        <input type="radio" id="muito_instavel" name="situacao_financeira" value="Muito instável">
+        <label for="muito_instavel">Muito instável</label><br><br>
+
+        <label for="planejamento_financeiro">5. Você tem algum tipo de planejamento financeiro?</label><br>
+        <input type="radio" id="planejamento_sim" name="planejamento_financeiro" value="Sim">
+        <label for="planejamento_sim">Sim</label><br>
+        <input type="radio" id="planejamento_nao" name="planejamento_financeiro" value="Não">
+        <label for="planejamento_nao">Não</label><br><br>
+
+        <label for="metodo_planejamento">6. Se sim, qual método você utiliza para planejar suas finanças?</label><br>
+        <input type="radio" id="consultoria" name="metodo_planejamento" value="Consultoria financeira">
+        <label for="consultoria">Consultoria financeira</label><br>
+        <input type="radio" id="aplicativos" name="metodo_planejamento" value="Aplicativos de gestão financeira">
+        <label for="aplicativos">Aplicativos de gestão financeira</label><br>
+        <input type="radio" id="planilhas" name="metodo_planejamento" value="Planilhas manuais">
+        <label for="planilhas">Planilhas manuais</label><br>
+        <input type="radio" id="outro_metodo" name="metodo_planejamento" value="Outro">
+        <label for="outro_metodo">Outro:</label>
+        <input type="text" id="outro_metodo_text" name="outro_metodo_text"><br><br>
+
+        <label for="reserva_emergencia">7. Você possui algum tipo de poupança ou reserva de emergência?</label><br>
+        <input type="radio" id="reserva_sim" name="reserva_emergencia" value="Sim">
+        <label for="reserva_sim">Sim</label><br>
+        <input type="radio" id="reserva_nao" name="reserva_emergencia" value="Não">
+        <label for="reserva_nao">Não</label><br><br>
+
+        <label for="conhecimento_financeiro">8. Como você classificaria seu conhecimento sobre educação financeira?</label><br>
+        <input type="radio" id="muito_bom" name="conhecimento_financeiro" value="Muito bom">
+        <label for="muito_bom">Muito bom</label><br>
+        <input type="radio" id="bom" name="conhecimento_financeiro" value="Bom">
+        <label for="bom">Bom</label><br>
+        <input type="radio" id="medio" name="conhecimento_financeiro" value="Médio">
+        <label for="medio">Médio</label><br>
+        <input type="radio" id="baixo" name="conhecimento"> </form>
+        <button onclick="window.location.href='PGV.html'">Concluir</button>
+</body>
+</html>
+</body>
+</html>
+   
